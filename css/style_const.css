@@ -45,7 +45,7 @@ z-index: -1;
 }
 .countDays::after{
     position: absolute;
-    content: 'days';
+    content: 'días';
     color: #fff;
     top: 0px;
     left: 10px;
@@ -59,7 +59,7 @@ z-index: -1;
 }
 .countHours::after {
   color: #fff;
-  content: "hours";
+  content: "horas";
   font-family: "Raleway",sans-serif;
   font-size: 20px;
   font-weight: 200;
@@ -73,7 +73,7 @@ z-index: -1;
 }
 .countMinutes::after{
     position: absolute;
-    content: 'minutes';
+    content: 'minutos';
     color: #fff;
     top: 0px;
     left: -10px;
@@ -87,7 +87,7 @@ z-index: -1;
 }
 .countSeconds::after{
     position: absolute;
-    content: 'seconds';
+    content: 'segundos';
     color: #fff;
     top: 0px;
     left: -10px;
