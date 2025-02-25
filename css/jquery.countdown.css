@@ -38,7 +38,7 @@
 
 .countDiv{
 	display:inline-block;
-	width:40px;
+	width:60px;
 	height:2.7em;
 	position:relative;
 }
@@ -54,4 +54,12 @@
   position: absolute;
   top: 5px;
   width: 3px;
+}
+
+@media (max-width: 768px) {
+
+  .countDiv0{ width: 100%; height: 0; display: block; }
+  .countDiv1{ width: 100%; height: 0; display: block; }
+  .countDiv2{ width: 100%; height: 0; display: block; }  
+
 }
