@@ -1,0 +1,299 @@
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    background-color: #36AC9C;
+    color: white;
+}
+
+.back-to-top:hover {
+    color: white;
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo2 {
+    width: 200px;
+}
+
+.bg-color {
+    background-color: #36AC9C !important;
+}
+
+.btn {
+    transition: .5s;
+    font-weight: 500;
+}
+
+.carousel-inner, .carousel-item, .carousel-caption{
+    height: 600px;
+}
+
+.carousel-item img {
+    margin-top: -15%;
+}
+
+.btn-primary {
+    color: var(--bs-light);
+}
+
+.icono-servicio {
+    position: relative;
+    padding: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.icono-servicio i {
+    font-size: 60px;
+    line-height: 0;
+}
+
+.sticky-top {
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 20px 0;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(3, 27, 78, .3);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+    background-color: #36AC9C;
+    border: 15px solid #36AC9C;
+}
+
+.contenedor-servicio {
+    position: relative;
+    background: var(--bs-light);
+}
+
+.bloque-servicio, .bloque-servicio-bis {
+    position: relative;
+    height: 100%;
+    padding: 45px 30px;
+    background: var(--bs-white);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .05);
+    text-align: center;
+}
+
+.bloque-servicio::before, .bloque-servicio-bis::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+    background: #36AC9C;
+}
+
+.bloque-servicio:hover::before, .bloque-servicio-bis:hover::before {
+    height: 100%;
+    top: 0;
+}
+
+.bloque-servicio *, .bloque-servicio-bis * {
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.bloque-servicio:hover h5,
+.bloque-servicio:hover p,
+.bloque-servicio-bis:hover h5,
+.bloque-servicio-bis:hover p {
+    color: var(--bs-white);
+}
+
+.bloque-servicio:hover .icono-servicio::before, .bloque-servicio-bis:hover .icono-servicio::before {
+    background: var(--bs-dark);
+}
+
+.bloque-servicio:hover .icono-servicio i, .bloque-servicio-bis:hover .icono-servicio i {
+    color: var(--bs-white) !important;
+}
+
+.bloque-servicio-bis h5{
+    font-size: 18px;
+}
+
+.bloque-servicio-bis p{
+    font-size: 15px;
+}
+
+.footer {
+    background: #e3e3e3;
+}
+
+.footer a, .footer a:hover {
+    color: #031b4e;
+}
+
+.derechos, .copyright {
+    font-size: 12px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-color {
+    background-color: #36AC9C !important;
+    border-color: #36AC9C !important;
+}
+
+.bloque-contacto {
+    height: 140px;
+}
+
+.cabecera {
+    background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3));
+    background-size: cover;
+}
+
+.video {
+  position: relative;
+  display: block;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.video::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; 
+}
+
+.video-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cookie-bar {
+    display: none; /* Ocultar la barra por defecto */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.cookie-bar p {
+    margin: 0;
+    padding: 0;
+}
+
+.cookie-buttons {
+    margin-top: 10px;
+}
+
+.cookie-buttons .btn {
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cookie-buttons .btn:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+#acceptBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#rejectBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-inner, .carousel-item, .carousel-caption{
+        height: 300px;
+    }
+
+    .carousel-item img {
+        margin-top: 0;
+    }
+
+    .nav-item {
+        padding-left: 1.5rem !important;
+        width: 100%;
+        border-top: 1px solid;
+    }
+
+    .video {
+        width: 100%;
+    }
+}

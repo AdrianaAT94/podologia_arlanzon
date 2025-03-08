@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Podología Arlanzón</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        loadHTML('partials/header.html', 'header');
+        loadHTML('partials/footer.html', 'footer');
+    </script>
+    
+    <script>
+        /*if (window.location.pathname.endsWith('.html')) {
+            let newUrl = window.location.pathname.replace('.html', ''); // Quita la extensión .html
+            window.history.replaceState({}, '', newUrl);  // Cambia la URL sin recargar
+        }*/
+    </script>
+</head>
+
+<body>
+
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+
+    <div id="header" class="sticky-top"></div>
+
+    <div class="container-fluid py-1">
+        <div class="container py-4">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 mb-3">Clínica Podología Arlanzón</h1>
+                <p class="mb-5">C/ Vitoria 53 bis. C.P:09004. Burgos</p>
+            </div>
+            <div class="row contact-info position-relative g-0 mb-5">
+                <div class="col-lg-4">
+                    <a href="https://wa.me/669558278" class="d-flex justify-content-lg-center bg-primary p-4 bloque-contacto">
+                        <div class="icon-box-light flex-shrink-0">
+                            <i class="bi bi-whatsapp text-white fs-1"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-white">Llámanos o escríbenos</h5>
+                            <span class="text-white mb-0 fs-5">+34 669 55 82 78</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="mailto:PodoArlazon@hotmail.com" class="d-flex justify-content-lg-center bg-primary p-4 bloque-contacto">
+                        <div class="icon-box-light flex-shrink-0">
+                            <i class="bi bi-envelope text-white fs-1"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-white">Envíanos un correo</h5>
+                            <span class="text-white mb-0 fs-5">PodoArlazon@hotmail.com</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-lg-center bg-primary p-4 bloque-contacto">
+                        <div class="icon-box-light flex-shrink-0">
+                            <i class="bi bi-clock text-white fs-1"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="text-white">Horario</h5>
+                            <span class="text-white mb-0 fs-5">Lunes a Viernes: 10h a 14h y 16h a 20h.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <!--<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-4">Contacta con Podología Arlanzón</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary btn-color py-3 px-5" type="submit">ENVIAR</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>-->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.9316271150756!2d-3.691794123702503!3d42.34398107246994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd45fde80700c627%3A0x96f29b62d8e2b3fc!2zUG9kb2xvZ8OtYSBBcmxhbnrDs24!5e0!3m2!1ses!2ses!4v1741441796412!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div> 
+    
+    <script>
+        $(document).ready(function() {
+            $('#enlace_contacto').addClass('active');
+        });
+    </script>   
+</body>
+
+</html>
