@@ -271,6 +271,15 @@
     color: white;
 }
 
+@font-face {
+  font-family: "Engravers"; 
+  src: url("engravers-gothic-bt.ttf") format("truetype");
+}
+
+.titulo-corporativo {
+  font-family: "Engravers", sans-serif;  /* Usas la fuente donde la necesites */
+}
+
 @media (max-width: 768px) {
     #header-carousel .carousel-item img {
         position: absolute;
