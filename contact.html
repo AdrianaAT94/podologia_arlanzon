@@ -53,7 +53,8 @@
     <div class="container-fluid py-1">
         <div class="container py-4">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 mb-3 titulo-corporativo">Clínica Podología Arlanzón</h1>
+                <h1 class="display-4 mb-3 titulo-corporativo">Podología Arlanzón</h1>
+                <h4 class="display-6 mb-3 titulo-corporativo">Luis Edmundo Fernández Calleja</h4>
                 <p class="mb-5">C/ Vitoria 53 bis. C.P:09004. Burgos</p>
             </div>
             <div class="row contact-info position-relative g-0 mb-5">
@@ -92,47 +93,48 @@
                 </div>
             </div>
             <div class="row g-5">
-                <!--
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="mb-4">Contacta con Podología Arlanzón</p>
                     <form action="https://formspree.io/f/maneyodg" method="POST">
-                        <div class="row g-3">
+                        <div id="formulario_contacto" class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required>
                                     <label for="name">Nombre</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Tu Email" required>
                                     <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject"  placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject"  placeholder="Asunto" required>
                                     <label for="subject">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 200px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 200px" required></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
-                            <input type="hidden" name="_replyto" value="email"> 
+                            <input type="hidden" id="replyto" name="_replyto"> 
 
                             <div class="col-12">
-                                <button class="btn btn-primary btn-color py-3 px-5" type="submit">ENVIAR</button>
+                                <button id="boton_enviar" class="btn btn-primary btn-color py-3 px-5" type="submit">ENVIAR</button>
                             </div>
+                        </div>
+                        <div id="correo_enviado" class="row d-none">                            
                             <div class="col-12">
-                                <p id="correo_enviado" class="d-none"></p>
+                                <p>Gracias por su mensaje. Nos pondremos en contacto con usted a la mayor brevedad posible.</p>
                             </div>
                         </div>
                     </form>
-                </div>-->
-                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.9316271150756!2d-3.691794123702503!3d42.34398107246994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd45fde80700c627%3A0x96f29b62d8e2b3fc!2zUG9kb2xvZ8OtYSBBcmxhbnrDs24!5e0!3m2!1ses!2ses!4v1741441796412!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -144,6 +146,17 @@
     <script>
         $(document).ready(function() {
             $('#enlace_contacto').addClass('active');
+            $('#email').on('blur', function() {
+                var valor = $(this).val();
+                $('#_replyto').val(valor);
+            });
+
+            $('#boton_enviar').click(function() {
+                setTimeout(function() {
+                    $('#formulario_contacto').addClass('d-none');
+                    $('#correo_enviado').removeClass('d-none');
+                }, 5000);
+            });
         });
     </script>   
 </body>

@@ -51,6 +51,12 @@
 
     <div id="header" class="sticky-top"></div>
 
+    <div class="container-fluid text-center p-3">
+        <div class="container">
+            <h1 class="display-4 mb-3 titulo-corporativo">Podología Arlanzón</h1>
+        </div>
+    </div>
+
     <div class="container-fluid header-carousel px-0">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -149,6 +155,16 @@
         </div>
     </div>
 
+    <div class="container-fluid contenedor-servicio pb-3">
+        <div class="container pt-5 pb-5">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 1000px;">
+                <h1 class="display-5 mb-3">Síguenos en @podologiaarlanzon</h1>
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-f63a3637-dab9-4704-bba6-78d701614e99" data-elfsight-app-lazy></div
+            </div>
+        </div>
+    </div>
+
     <div id="footer"></div>
 
     <script>
@@ -156,7 +172,8 @@
             $('#enlace_inicio').addClass('active');
             setTimeout(function() {
                 $('a[href*="google-reviews-widget"]').css('display', 'none');
-            }, 3000);
+                $('a[href*="instagram-feed-instashow"]').css('display', 'none');
+            }, 5000);
 
         });
 
