@@ -43,6 +43,7 @@ body {
 
 .bg-color {
     background-color: #36AC9C !important;
+    filter: contrast(1.4);
 }
 
 .btn {
@@ -81,7 +82,7 @@ body {
     margin-right: 35px;
     padding: 20px 0;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     outline: none;
 }
 
