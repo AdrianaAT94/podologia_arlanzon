@@ -1,3 +1,7 @@
+body {
+    color: #505569;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -27,6 +31,10 @@
 
 .fw-medium {
     font-weight: 500;
+}
+
+.texto-slide {
+    font-size: 1.75rem;
 }
 
 .logo {
@@ -262,12 +270,12 @@
 }
 
 #acceptBtn {
-    background-color: #4CAF50;
+    background-color: green;
     color: white;
 }
 
 #rejectBtn {
-    background-color: #f44336;
+    background-color: red;
     color: white;
 }
 
