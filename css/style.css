@@ -43,7 +43,6 @@ body {
 
 .bg-color {
     background-color: #36AC9C !important;
-    filter: contrast(1);
 }
 
 .btn {
@@ -84,6 +83,7 @@ body {
     color: white;
     font-size: 1.4rem;
     outline: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
 }
 
 .navbar .navbar-nav .nav-link:hover,
